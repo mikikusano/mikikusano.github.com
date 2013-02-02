@@ -24,7 +24,7 @@
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/mikikusano" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="https://github.com/mikikusano" id="github-url" class="button fork"><strong>View On GitHub</strong></a>
       </div><!-- end banner -->
 
     <div class="wrapper">
@@ -32,7 +32,8 @@
         <ul></ul>
       </nav>
       <section>
-        <form id="questions">
+
+<form id="questions">
 <h3>デートはどこで遊びたいですか？</h3>
 
 <ul>
@@ -65,11 +66,6 @@
 <li><input size="20" type="text" value="" name="twitter"></li>
 </ul>
 
-<h3>GitHubで何かを公開している人</h3>
-<ul>
-<li><input size="20" type="text" value="" name="github"></li>
-</ul>
-
 <h3>私の好きな食べ物は何でしょうか？</h3>
 <ul>
 <li><input type="radio" name="food" value="0">チョコ</li>
@@ -78,9 +74,17 @@
 <li><input type="radio" name="food" value="3">いちご</li>
 </ul>
 
-<input type="button" id="push" value="送信">
+<h3>この情報を元にGithubでPull Requestを作成します。<br>IDとPasswordを入力して下さい。</h3>
+<label for="github-id" style="display: inline-block; width: 120px;">Github ID:</label>
+<input type="text" name="github-id" id="github-id">
+</form>
 
-        </form>
+<label for="github-pass" style="display: inline-block; width: 120px;">Github Password:</label>
+<input type="password" name="github-pass" id="github-pass">
+<br>
+<br>
+<input type="button" id="push" value="送信" style="margin-left: 500px;">
+
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
